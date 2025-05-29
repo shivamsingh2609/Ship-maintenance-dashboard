@@ -1,0 +1,100 @@
+/* App.css */
+
+/* Reset and base styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f9ebe0, #f7d9c4, #eac9aa);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #3d2e29; /* base text color */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Button base styles */
+button, .btn {
+  border: 2px solid #5a3e36;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  background-color: #fff7f0;
+  color: #3d2e29;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 
+    background-color 0.3s ease, 
+    border-color 0.3s ease, 
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  user-select: none;
+  display: inline-block;
+  text-align: center;
+  line-height: 1.2;
+  box-shadow: 0 2px 5px rgba(90, 62, 54, 0.1);
+}
+
+/* Button hover and focus */
+button:hover, .btn:hover,
+button:focus-visible, .btn:focus-visible {
+  background-color: #f1d3b2;
+  border-color: #8b5e3c;
+  transform: scale(1.03);
+  outline: none;
+  box-shadow: 0 4px 10px rgba(139, 94, 60, 0.3);
+}
+
+/* Accessible focus outline for keyboard users */
+button:focus-visible, .btn:focus-visible {
+  outline: 3px solid #8b5e3c;
+  outline-offset: 2px;
+}
+
+/* Color variation hover classes */
+.hover\:bg-blue-600:hover {
+  background-color: #cbe3fa;
+  color: #0c1b33;
+  border-color: #639dda;
+  box-shadow: 0 0 8px rgba(99, 157, 218, 0.5);
+}
+
+.hover\:bg-green-600:hover {
+  background-color: #d3f4c1;
+  color: #1f3c1f;
+  border-color: #7fbf61;
+  box-shadow: 0 0 8px rgba(127, 191, 97, 0.5);
+}
+
+.hover\:bg-purple-600:hover {
+  background-color: #f0ddfc;
+  color: #301934;
+  border-color: #a277c3;
+  box-shadow: 0 0 8px rgba(162, 119, 195, 0.5);
+}
+
+.hover\:bg-red-600:hover {
+  background-color: #fddad5;
+  color: #3d1f1f;
+  border-color: #d66a61;
+  box-shadow: 0 0 8px rgba(214, 106, 97, 0.5);
+}
+
+/* Optional: Disabled button state */
+button:disabled, .btn:disabled {
+  background-color: #f7f1ee;
+  border-color: #ccc1ba;
+  color: #aaa09a;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Responsive text sizing for buttons */
+@media (max-width: 480px) {
+  button, .btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+}
